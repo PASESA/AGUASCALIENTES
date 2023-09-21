@@ -17,7 +17,7 @@ from operacion import Operacion
 import xlsxwriter
 
 
-###--###
+###-###
 p = Usb(0x04b8, 0x0e15, 0)
 penalizacion_con_importe = False
 from dateutil.relativedelta import relativedelta
@@ -643,10 +643,9 @@ class FormularioOperacion:
         self.TiempoTotal.set(TiempoTotal)
         self.TiempoTotal_auxiliar.set(self.TiempoTotal.get()[:-3])
 
-        minutos = 0
-
         # Calcula la tarifa y el importe a pagar
         minutos = 0
+        
         if self.minutos_dentro == 0:
             minutos = 0
         elif self.minutos_dentro < 16 and self.minutos_dentro >= 1:
@@ -660,13 +659,22 @@ class FormularioOperacion:
 
         importe = 0
 
-
         if self.dias_dentro == 0 and self.horas_dentro == 0:
             # Si la permanencia es menor a 1 hora, se aplica una tarifa fija de 28 unidades
             importe = 28
+
+        # Calcula el importe a pagar según la tabla de precios
+        elif self.horas_dentro < 9: 
+            importe = (self.horas_dentro * 28) + (minutos * 7)
+
+            if self.horas_dentro == 8 and minutos == 4:
+                importe = 250
+
         else:
-            # Si la permanencia es mayor a 1 hora, se calcula el importe según una formula específica
-            importe = ((self.dias_dentro) * 250 + (self.horas_dentro * 28) + (minutos) * 7)
+            importe = 250
+
+        # Calcula el importe total a pagar
+        importe = (self.dias_dentro * 250) + importe
 
         # Establecer el importe y mostrarlo
         self.mostrar_importe(importe)
