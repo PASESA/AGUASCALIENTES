@@ -637,53 +637,36 @@ class FormularioOperacion:
         self.dias_dentro = TiempoTotal.days
         segundos_vividos = TiempoTotal.seconds
 
-        self.horas_dentro, segundos_vividos = divmod(segundos_vividos, 3600)
-        self.minutos_dentro, segundos_vividos = divmod(segundos_vividos, 60)
+        self.horas_dentro, segundos_restantes = divmod(segundos_vividos, 3600)
+        self.minutos_dentro, segundos_restantes = divmod(segundos_restantes, 60)
 
         self.TiempoTotal.set(TiempoTotal)
         self.TiempoTotal_auxiliar.set(self.TiempoTotal.get()[:-3])
 
+        minutos = 0
+
+        # Calcula la tarifa y el importe a pagar
+        minutos = 0
+        if self.minutos_dentro == 0:
+            minutos = 0
+        elif self.minutos_dentro < 16 and self.minutos_dentro >= 1:
+            minutos = 1
+        elif self.minutos_dentro < 31 and self.minutos_dentro >= 16:
+            minutos = 2
+        elif self.minutos_dentro < 46 and self.minutos_dentro >= 31:
+            minutos = 3
+        elif self.minutos_dentro <= 59 and self.minutos_dentro >= 46:
+            minutos = 4
+
         importe = 0
+
+
         if self.dias_dentro == 0 and self.horas_dentro == 0:
+            # Si la permanencia es menor a 1 hora, se aplica una tarifa fija de 28 unidades
             importe = 28
         else:
-
-            # Calcula la tarifa y el importe a pagar
-            if self.minutos_dentro == 0:
-                cuarto_hora = 0
-            elif self.minutos_dentro < 16 and self.minutos_dentro >= 1:
-                cuarto_hora = 1
-            elif self.minutos_dentro < 31 and self.minutos_dentro >= 16:
-                cuarto_hora = 2
-            elif self.minutos_dentro < 46 and self.minutos_dentro >= 31:
-                cuarto_hora = 3
-            elif self.minutos_dentro <= 59 and self.minutos_dentro >= 46:
-                cuarto_hora = 4
-
-            # Calcula el importe a pagar según la tabla de precios
-            if self.horas_dentro <= 3:
-
-                importe = (self.horas_dentro * 28) + (cuarto_hora * 7)
-                if self.horas_dentro == 2 and cuarto_hora == 4:
-                    importe = 77
-
-                if self.horas_dentro == 3 and self.minutos_dentro >= 0:
-                    importe = 80
-
-            else:
-                if 3 <= self.horas_dentro < 12:
-                    importe = 80
-
-                elif 12 <= self.horas_dentro <= 14:
-                    importe = (self.horas_dentro * 28) + (cuarto_hora * 7) - 256
-                    if cuarto_hora == 4:
-                        importe = 160
-
-                else:
-                    importe = 160
-
-                # Calcula el importe total a pagar
-            importe = (self.dias_dentro * 160) + importe
+            # Si la permanencia es mayor a 1 hora, se calcula el importe según una formula específica
+            importe = ((self.dias_dentro) * 250 + (self.horas_dentro * 28) + (minutos) * 7)
 
         # Establecer el importe y mostrarlo
         self.mostrar_importe(importe)
