@@ -226,11 +226,11 @@ def call_process() -> str:
         str: Mensaje informativo sobre el resultado del envío del correo.
     """
     # Nombre del estacionamiento
-    nombre_estacionamiento = 'Amores'
+    nombre_estacionamiento = 'AGUASCALIENTES'
 
     # Datos de acceso a la cuenta de correo
-    username = 'amores1003@pasesa.com.mx'
-    password = '#Amore1003'
+    username = 'aguascalientes143@pasesa.com.mx'
+    password = '#Aguas143'
     EMAIL = "enviocorreospasesa@outlook.com"
 
     # Inicializar herramientas de correo electronico y envío
