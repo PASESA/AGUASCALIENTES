@@ -6,7 +6,7 @@ from tkinter import messagebox as mb
 class Operacion:
     def __init__(self):
         self.host = "localhost"
-        self.user = "root"
+        self.user = "Aurelio"
         self.password = "RG980320"
         self.database = "Parqueadero1"
 
