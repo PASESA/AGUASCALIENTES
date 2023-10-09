@@ -47,7 +47,7 @@ estilo = ('Arial', 12)
 
 from controller_email import main
 
-send_data = True
+send_data = False
 
 class FormularioOperacion:
     def __init__(self):
