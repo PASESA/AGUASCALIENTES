@@ -1260,20 +1260,21 @@ class FormularioOperacion:
         respuesta=self.DB.corte()
         self.ImporteCorte.set(respuesta)
         ##obtengamo la fechaFin del ultimo corte
-        ultiCort1=str(self.DB.UltimoCorte())
+        ultiCort1=self.DB.UltimoCorte()
+        ultiCort1 = ultiCort1[0][0]
+        print(ultiCort1.strftime("%Y-%m-%d %H:%M:%S"))
         #mb.showinfo("msj uno",ultiCort1)
-        startLoc = 20
-        endLoc = 43
-        ultiCort1=(ultiCort1)[startLoc: endLoc]
-        ultiCort1 = ultiCort1.strip('),')
-        if len(ultiCort1) <= 19:   
+        #startLoc = 20
+        #endLoc = 43
+        #ultiCort1=(ultiCort1)[startLoc: endLoc]
+        #ultiCort1 = ultiCort1.strip('),')
+        #if len(ultiCort1) <= 19:   
+        #    ultiCort1= datetime.strptime(ultiCort1, '%Y, %m, %d, %H, %M, %S')
+        #else:
+        #    ultiCort1= datetime.strptime(ultiCort1, '%Y, %m, %d, %H, %M, %S')
 
-            ultiCort1= datetime.strptime(ultiCort1, '%Y, %m, %d, %H, %M')
-        else:
-            ultiCort1= datetime.strptime(ultiCort1, '%Y, %m, %d, %H, %M, %S')
-
-        ultiCort1 = datetime.strftime(ultiCort1, '%Y/%m/%d/%H/%M/%S')
-        ultiCort1 = datetime.strptime(ultiCort1, '%Y/%m/%d/%H/%M/%S')
+        #ultiCort1 = datetime.strftime(ultiCort1, '%Y/%m/%d/%H/%M/%S')
+        #ultiCort1 = datetime.strptime(ultiCort1, '%Y/%m/%d/%H/%M/%S')
         self.FechUCORTE.set(ultiCort1)# donde el label no esta bloqueada
         ###ahora obtenemos la fecha del corte ha realizar
         fecha = datetime.today()
