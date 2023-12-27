@@ -1,0 +1,34 @@
+Est Aguascalientes 143 CORTE Num 242
+IMPORTE: $334.0
+
+Inicio: Sabado 23-Dec-2023 a las 06:18:11
+Final: Sabado 23-Dec-2023 a las 11:00:49
+
+Folio 5444 al inicio del turno
+Folio 5450 al final del turno
+
+Cajero en Turno: Filemon Salazar Reyes
+Turno: 1
+------------------------------
+Sesion FILEMON: 2023-12-23 07:37:35
+Sesion FILEMON: 2023-12-23 10:58:12
+Sesion FILEMON: 2023-12-23 11:00:32
+----------------------------------
+
+Boletos Cobrados: 3
+Boletos Expedidos: 6
+Boletos Turno Anterior: 2
+Boletos dejados: 5
+------------------------------
+
+Cantidad e Importes
+
+Cantidad - Tarifa - valor C/U - Total 
+  1  -  Normal  -  $28.0   -  $28.0
+  1  -  Normal  -  $56.0   -  $56.0
+  1  -  Normal  -  $250.0   -  $250.0
+3 Boletos        Suma total $334.0
+
+----------------------------------
+
+----------------------------------

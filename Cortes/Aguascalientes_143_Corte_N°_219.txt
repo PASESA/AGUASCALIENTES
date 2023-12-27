@@ -1,0 +1,46 @@
+Est Aguascalientes 143 CORTE Num 219
+IMPORTE: $1391.0
+
+Inicio: Jueves 14-Dec-2023 a las 08:11:03
+Final: Jueves 14-Dec-2023 a las 15:02:14
+
+Folio 4889 al inicio del turno
+Folio 4926 al final del turno
+
+Cajero en Turno: Filemon Salazar Reyes
+Turno: 1
+------------------------------
+Sesion FILEMON: 2023-12-14 08:11:31
+----------------------------------
+
+Boletos Cobrados: 28
+Boletos Expedidos: 37
+Boletos Turno Anterior: 3
+Boletos dejados: 12
+------------------------------
+
+Cantidad e Importes
+
+Cantidad - Tarifa - valor C/U - Total 
+  16  -  Normal  -  $28.0   -  $448.0
+  4  -  Normal  -  $35.0   -  $140.0
+  1  -  Normal  -  $49.0   -  $49.0
+  1  -  Normal  -  $56.0   -  $56.0
+  2  -  Normal  -  $63.0   -  $126.0
+  1  -  Normal  -  $70.0   -  $70.0
+  1  -  Normal  -  $84.0   -  $84.0
+  1  -  Normal  -  $168.0   -  $168.0
+  1  -  Normal  -  $250.0   -  $250.0
+28 Boletos        Suma total $1391.0
+
+----------------------------------
+
+Reimpresiones de corte
+
+-----------------
+REIMPRESION DEL CORTE 217
+Cajero que lo consulta: Filemon Salazar Reyes
+Hora de consulta: 2023-12-14 08:12:19
+-----------------
+----------------------------------
+----------------------------------

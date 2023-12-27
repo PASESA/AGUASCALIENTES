@@ -1,0 +1,42 @@
+Est Aguascalientes 143 CORTE Num 202
+IMPORTE: $2850.0
+
+Inicio: Jueves 07-Dec-2023 a las 22:01:09
+Final: Viernes 08-Dec-2023 a las 06:16:20
+
+Folio 4516 al inicio del turno
+Folio 4516 al final del turno
+
+Cajero en Turno: Eduardo Jimenez Ramirez
+Turno: 3
+------------------------------
+Sesion EDUARDO: 2023-12-07 22:17:18
+----------------------------------
+
+Boletos Cobrados: 19
+Boletos Expedidos: 0
+Boletos Turno Anterior: 21
+Boletos dejados: 2
+------------------------------
+
+Cantidad e Importes
+
+Cantidad - Tarifa - valor C/U - Total 
+  1  -  Normal  -  $28.0   -  $28.0
+  1  -  Normal  -  $56.0   -  $56.0
+  2  -  Normal  -  $63.0   -  $126.0
+  1  -  Normal  -  $70.0   -  $70.0
+  1  -  Normal  -  $112.0   -  $112.0
+  3  -  Normal  -  $140.0   -  $420.0
+  1  -  Normal  -  $147.0   -  $147.0
+  1  -  Normal  -  $168.0   -  $168.0
+  1  -  Normal  -  $175.0   -  $175.0
+  2  -  Normal  -  $182.0   -  $364.0
+  1  -  Normal  -  $196.0   -  $196.0
+  1  -  Normal  -  $238.0   -  $238.0
+  3  -  Normal  -  $250.0   -  $750.0
+19 Boletos        Suma total $2850.0
+
+----------------------------------
+
+----------------------------------

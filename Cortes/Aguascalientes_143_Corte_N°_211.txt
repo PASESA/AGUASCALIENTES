@@ -1,0 +1,32 @@
+Est Aguascalientes 143 CORTE Num 211
+IMPORTE: $238.0
+
+Inicio: Lunes 11-Dec-2023 a las 21:54:58
+Final: Martes 12-Dec-2023 a las 07:06:26
+
+Folio 4761 al inicio del turno
+Folio 4761 al final del turno
+
+Cajero en Turno: Eduardo Jimenez Ramirez
+Turno: 3
+------------------------------
+Sesion EDUARDO: 2023-12-11 22:02:59
+Sesion EDUARDO: 2023-12-12 07:06:16
+----------------------------------
+
+Boletos Cobrados: 2
+Boletos Expedidos: 0
+Boletos Turno Anterior: 3
+Boletos dejados: 1
+------------------------------
+
+Cantidad e Importes
+
+Cantidad - Tarifa - valor C/U - Total 
+  1  -  Normal  -  $70.0   -  $70.0
+  1  -  Normal  -  $168.0   -  $168.0
+2 Boletos        Suma total $238.0
+
+----------------------------------
+
+----------------------------------

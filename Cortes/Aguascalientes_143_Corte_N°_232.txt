@@ -1,0 +1,40 @@
+Est Aguascalientes 143 CORTE Num 232
+IMPORTE: $1608.0
+
+Inicio: Martes 19-Dec-2023 a las 14:53:23
+Final: Martes 19-Dec-2023 a las 21:50:46
+
+Folio 5245 al inicio del turno
+Folio 5263 al final del turno
+
+Cajero en Turno: Eutimio Martinez Cruz
+Turno: 2
+------------------------------
+Sesion EUTIMIO: 2023-12-19 14:54:01
+----------------------------------
+
+Boletos Cobrados: 25
+Boletos Expedidos: 18
+Boletos Turno Anterior: 10
+Boletos dejados: 3
+------------------------------
+
+Cantidad e Importes
+
+Cantidad - Tarifa - valor C/U - Total 
+  9  -  Normal  -  $28.0   -  $252.0
+  2  -  Normal  -  $35.0   -  $70.0
+  4  -  Normal  -  $42.0   -  $168.0
+  1  -  Normal  -  $49.0   -  $49.0
+  2  -  Normal  -  $56.0   -  $112.0
+  1  -  Normal  -  $70.0   -  $70.0
+  1  -  Normal  -  $91.0   -  $91.0
+  2  -  Normal  -  $105.0   -  $210.0
+  1  -  Normal  -  $126.0   -  $126.0
+  1  -  Normal  -  $210.0   -  $210.0
+  1  -  Normal  -  $250.0   -  $250.0
+25 Boletos        Suma total $1608.0
+
+----------------------------------
+
+----------------------------------
